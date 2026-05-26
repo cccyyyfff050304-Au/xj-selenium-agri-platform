@@ -1,0 +1,2 @@
+-- Compatibility placeholder.
+-- The maintained schema script is database/init.sql.

@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: xj-selenium-agri-backend
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /api/health
+    envVars:
+      - key: JAVA_TOOL_OPTIONS
+        value: -XX:MaxRAMPercentage=75.0 -Dfile.encoding=UTF-8
+      - key: MYSQL_URL
+        sync: false
+      - key: MYSQL_USERNAME
+        sync: false
+      - key: MYSQL_PASSWORD
+        sync: false
+      - key: APP_JWT_SECRET
+        generateValue: true
+      - key: APP_JWT_EXPIRE_HOURS
+        value: 12

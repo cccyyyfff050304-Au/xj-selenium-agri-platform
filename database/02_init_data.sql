@@ -1,0 +1,2 @@
+-- Compatibility placeholder.
+-- The maintained seed script is database/seed.sql.
