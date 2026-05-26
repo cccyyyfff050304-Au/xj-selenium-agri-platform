@@ -5,7 +5,7 @@
         <h2 class="page-title">首页数据驾驶舱</h2>
         <div class="page-subtitle">从 MySQL 实时汇总地块、作物、土壤评估、富硒预测和风险预警数据</div>
       </div>
-      <el-button :icon="Refresh" @click="loadData">刷新</el-button>
+      <el-button type="primary" :icon="Refresh" @click="loadData">刷新</el-button>
     </div>
 
     <div class="stat-grid">
